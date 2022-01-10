@@ -54,3 +54,6 @@ dependencies {
     api "commons-codec:commons-codec:1.15"
     api "org.zeroturnaround:zt-zip:1.14"
 }
+
+
+apply from: './bintray.gradle'
