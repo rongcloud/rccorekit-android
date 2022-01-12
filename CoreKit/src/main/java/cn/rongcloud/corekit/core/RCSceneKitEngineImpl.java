@@ -37,14 +37,12 @@ import okhttp3.Response;
 public class RCSceneKitEngineImpl implements IRCSceneKitEngine {
 
     private final static String TAG = RCSceneKitEngineImpl.class.getSimpleName();
-
-    private final static Holder holder = new Holder();
     private final Map<String, RCKitInit<?>> kitInitMap = new HashMap<>();
     private Context mContext;
     private String mAppKey;
 
     public static IRCSceneKitEngine getInstance() {
-        return holder.instance;
+        return Holder.INSTANCE;
     }
 
     /**
@@ -270,7 +268,7 @@ public class RCSceneKitEngineImpl implements IRCSceneKitEngine {
     }
 
     private static class Holder {
-        private final IRCSceneKitEngine instance = new RCSceneKitEngineImpl();
+        private static final IRCSceneKitEngine INSTANCE = new RCSceneKitEngineImpl();
     }
 
 }
