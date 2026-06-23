@@ -1,3 +1,8 @@
+> [!WARNING]
+> ⚠️ **暂停维护说明**
+>
+> 该工程已不再维护，代码仅供学习参考。
+
 # Android Core Kit 文档
 
 - `CoreKit` ：Kit的基础库，主要负责初始化Kit，网络加载Json文件或本地 Json 文件等，优先下载远端配置，远端拉取失败或者未配置 AppKey 的情况下采用本地配置。
@@ -408,4 +413,3 @@
 举例：
 `rckit_ic_music_add.png`
 `rckit_img_empty.png`
-
